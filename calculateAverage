@@ -1,0 +1,12 @@
+function calculateAverage(numbers) {
+  if (numbers.length === 0) {
+    return 0; // Retorna 0 si el arreglo está vacío para evitar divisiones por cero
+  }
+  
+  let sum = 0;
+  for (let number of numbers) {
+    sum += number;
+  }
+  
+  return sum / numbers.length;
+}
