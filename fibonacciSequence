@@ -1,0 +1,8 @@
+function fibonacciSequence(limit) {
+  let fibonacciSeries = [1, 1];
+  while (fibonacciSeries.length < limit) {
+    let nextNumber = fibonacciSeries[fibonacciSeries.length - 1] + fibonacciSeries[fibonacciSeries.length - 2];
+    fibonacciSeries.push(nextNumber);
+  }
+  return fibonacciSeries;
+}
